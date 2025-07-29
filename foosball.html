@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindtickle Foosball Tournament</title>
+    <style>
+        body {
+            background: #121212;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #00e5ff;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .group,
+        .match {
+            background: #1e1e1e;
+            border-left: 5px solid #00e5ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .match.winner {
+            border-left-color: #00c853;
+        }
+
+        .match.loser {
+            border-left-color: #d50000;
+        }
+
+        .teams {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .score {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .bracket {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .bracket-column {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        .quarterfinals {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .quarterfinals .match {
+            max-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🏆 Mindtickle Foosball Tournament</h1>
+    <h2>Organized under MAD (Mindtickle Annual Day)</h2>
+
+    <div class="section">
+        <h2>Group Stage Results</h2>
+        <div class="bracket">
+            <div class="bracket-column">
+                <h3>Group A</h3>
+                <div class="group">1st: Jai Raj Srivastava & Akhilesh Yadav</div>
+                <div class="group">2nd: Swapnaneel Nandy & Harsh Jain</div>
+            </div>
+            <div class="bracket-column">
+                <h3>Group B</h3>
+                <div class="group">1st: Akshay Singh & Malhaar Shikhare</div>
+                <div class="group">2nd: Gitesh Patil & Sarthak Jain</div>
+            </div>
+            <div class="bracket-column">
+                <h3>Group C</h3>
+                <div class="group">1st: Rahul Gupta & Mukesh</div>
+                <div class="group">2nd: Tushar Rathi & Rahul Raj</div>
+            </div>
+            <div class="bracket-column">
+                <h3>Group D</h3>
+                <div class="group">1st: Shubham Bhosale & Ankit Khadloya</div>
+                <div class="group">2nd: mdadil.Shahrukh & Soumitya Chauhan</div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Quarterfinals</h2>
+        <div class="quarterfinals">
+            <div class="match winner">
+                <div class="teams">
+                    <span>Jai Raj & Akhilesh</span><span>vs</span><span>Shahrukh & Soumitya</span>
+                </div>
+                <div class="score">10-9, 10-7</div>
+            </div>
+
+            <div class="match winner">
+                <div class="teams">
+                    <span>Rahul & Mukesh</span><span>vs</span><span>Gitesh & Sarthak</span>
+                </div>
+                <div class="score">10-0, 10-7</div>
+            </div>
+
+            <div class="match winner">
+                <div class="teams">
+                    <span>Shubham & Ankit</span><span>vs</span><span>Swapnaneel & Harsh</span>
+                </div>
+                <div class="score">10-5, 8-10, 10-8</div>
+            </div>
+
+            <div class="match winner">
+                <div class="teams">
+                    <span>Tushar & Rahul Raj</span><span>vs</span><span>Akshay & Malhaar</span>
+                </div>
+                <div class="score">10-1, 10-4</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2>Semi Finals</h2>
+        <div class="bracket">
+            <div class="bracket-column">
+                <div class="match">
+                    <div class="teams">
+                        <span>Jai Raj & Akhilesh</span><span>vs</span><span>Tushar & Rahul Raj</span>
+                    </div>
+                </div>
+                <div class="match">
+                    <div class="teams">
+                        <span>Rahul & Mukesh</span><span>vs</span><span>Shubham & Ankit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made by Varad Naik 😎 for the Mindtickle Team · MAD 2025 · #FoosballMadness
+    </div>
+</body>
+
+</html>
